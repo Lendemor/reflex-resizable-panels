@@ -32,14 +32,16 @@ def panels():
     return rx.box(
         rzp.group(
             rzp.panel(
-                id="yellow",
                 background_color=rx.color("black", 10),
-                min_size=10,
-                max_size=30,
+                min_size=20,
                 default_size=20,
             ),
             rzp.handle(),
-            rzp.panel(rx.container(lorem()), background_color=(rx.color("gray", 10))),
+            rzp.panel(
+                rx.container(lorem()),
+                background_color=rx.color("gray", 10),
+                min_size=30,
+            ),
             direction="horizontal",
         ),
         width="100%",

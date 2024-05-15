@@ -18,9 +18,6 @@ class ResizablePanels(rx.Component):
     # The React library to wrap.
     library = lib_name
 
-    # The component id
-    # id: rx.Var[str] = None
-
 
 class PanelRoot(rx.el.Div):
     def add_style(self) -> dict[str, Any] | None:
@@ -84,7 +81,6 @@ class PanelResizeHandle(ResizablePanels):
 
 
 class ResizablePanelsNamespace(SimpleNamespace):
-    root = rx.box
     group = staticmethod(PanelGroup.create)
     panel = staticmethod(Panel.create)
     handle = staticmethod(PanelResizeHandle.create)
