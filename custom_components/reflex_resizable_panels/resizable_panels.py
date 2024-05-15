@@ -79,6 +79,12 @@ class PanelResizeHandle(ResizablePanels):
 
     alias = "ResizablePanelResizeHandle"
 
+    def add_style(self) -> dict[str, Any] | None:
+        return {
+            "width": "3px",
+            "background": rx.color("accent", 9),
+        }
+
 
 class ResizablePanelsNamespace(SimpleNamespace):
     group = staticmethod(PanelGroup.create)
