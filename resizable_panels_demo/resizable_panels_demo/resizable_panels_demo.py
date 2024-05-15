@@ -34,8 +34,8 @@ def panels():
             rzp.panel(
                 id="yellow",
                 background_color=rx.color("black", 10),
-                collapsible=True,
                 min_size=10,
+                max_size=30,
                 default_size=20,
             ),
             rzp.handle(),
