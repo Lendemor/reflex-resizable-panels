@@ -37,7 +37,6 @@ def index():
 - `children`: List of `Panel` and `Handle` components.
 - `auto_save_id`: `str` - ID to save the layout in LocalStorage.
 - `direction`: `Literal["horizontal", "vertical"]` - Direction of the panels. Default is `horizontal`.
-- `onLayout`: Called when group layout changes.
 
 ### Panel
 - `children`: `Component` - Content of the panel.
